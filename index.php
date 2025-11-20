@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Tiara Murni</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #00eaff;
+            object-fit: cover;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #00eaff;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            background: linear-gradient(135deg, #000, #222);
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+        }
+        .hero span {
+            color: #00eaff;
+            font-weight: 700;
+        }
+        .hero p {
+            margin: 20px 0;
+            color: #ccc;
+            max-width: 500px;
+        }
+        .btn {
+            padding: 12px 25px;
+            background: #00eaff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #000;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 10%;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00eaff;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+        }
+        .skill-box {
+            background: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+
+        /* PROJECT GRID */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00eaff;
+        }
+
+        /* CONTACT */
+        .contact p {
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        .contact a {
+            color: #ffffffff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <img src="img/tiara.jpeg" class="logo-img" alt="Foto Tiara">
+        <div>
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#skills">Keahlian</a>
+            <a href="#experience">Pengalaman</a>
+            <a href="#contact">Kontak</a>
+            <a href="profil.php">Profil</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Haii, Saya <span>Tiara Murni</span></h1>
+            <p>Saya seorang profesional di bidang Teknologi Informasi & Perangkat Lunak.</p>
+            <a href="#contact" class="btn">Hubungi Saya</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>
+            Nama saya <strong>Tiara Murni</strong>.
+            Saya lulusan SMK Mandiri jurusan Rekayasa Perangkat Lunak.
+            Saya sering membuat UI Design dan Landing Page untuk portofolio profesional,
+            link bio seperti Linktree untuk jualan online, dan tampilan digital untuk branding.
+            Saya juga menguasai Microsoft Office seperti Word dan Excel.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Keahlian</h2>
+        <div class="skills">
+            <div class="skill-box">Desain Portofolio</div>
+            <div class="skill-box">Desain Jualan</div>
+            <div class="skill-box">UI Design</div>
+            <div class="skill-box">Landing Page</div>
+            <div class="skill-box">Microsoft Office</div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <h2>Pengalaman Kerja</h2>
+        <div class="projects">
+
+            <div class="card">
+                <h3>PKL FIP Unimed (2025)</h3>
+                <p>Bagian Perpustakaan — membantu administrasi, pengelolaan buku, dan layanan perpustakaan.</p>
+            </div>
+
+            <div class="card">
+                <h3>PKL PT INTI (2025)</h3>
+                <p>Bagian Repurbish — membantu pengecekan perangkat, uji fungsi perangkat, dan data perangkat.</p>
+            </div>
+
+            <div class="card">
+                <h3>PKL Baznas (2026)</h3>
+                <p>Bagian Administrasi — mengelola arsip, input data, dan membantu pelayanan kantor.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Kontak</h2>
+        <div class="contact">
+            <p>Email: <strong>tiaramurni107@gmail.com</strong></p>
+
+            <p>
+                Instagram:
+                <a href="https://www.instagram.com/thyminae?igsh=YWNjdzM4cmVyd3lz" target="_blank">
+                    @thyminae
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/thyminae" target="_blank">
+                    @thyminae
+                </a>
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
